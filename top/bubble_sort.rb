@@ -7,9 +7,7 @@ def bubble_sort(arr)
     count += 1
     m = 0
     until m == n - count
-      if arr[m] > arr[m+1]
-        arr[m],arr[m+1] = arr[m+1], arr[m]
-      end
+      arr[m], arr[m + 1] = arr[m + 1], arr[m] if arr[m] > arr[m + 1]
       m += 1
     end
   end
